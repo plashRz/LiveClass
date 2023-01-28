@@ -4,7 +4,7 @@ public class liveClass {
     //Static block
     static {
 
-        System.out.println("world");
+        System.out.println("world from static block");
     }
     public static void main(String[] args){
 
@@ -28,6 +28,6 @@ public class liveClass {
     }
 
     public void outPuty1 (){
-        System.out.println("hello");
+        System.out.println("hello from live class 1");
     }
 }
