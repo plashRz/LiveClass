@@ -42,5 +42,6 @@ public class dimeArray {
 
 
     }
-
+    //used arrayInstanceName.length() for rows
+    //used arrayInstanceName[0].length() for columns
 }
