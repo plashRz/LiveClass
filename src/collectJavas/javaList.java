@@ -1,6 +1,7 @@
 package collectJavas;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class javaList {
@@ -36,6 +37,13 @@ public class javaList {
             System.out.println(n);
         }
 
+        List<String> nLink = new LinkedList<>();
+        nLink.add("a");
+        nLink.add("b");
+        nLink.add("c");
+        nLink.add("d");
+
+        System.out.println(nLink);
     }
 
 }

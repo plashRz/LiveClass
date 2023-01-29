@@ -3,9 +3,9 @@ import java.util.Scanner;
 public class authenticate {
 
     //////DATA PART
-    private final String[] users = {"user1","user2","user3",
+    final String[] users = {"user1","user2","user3",
             "user4","user5"};
-    private final String[] pass = {"pass1","pass2","pass3",
+    final String[] pass = {"pass1","pass2","pass3",
             "pass4","pass5"};
     //////
 
@@ -15,7 +15,7 @@ public class authenticate {
         authenticate auth = new authenticate();
         Scanner scan = new Scanner(System.in);
         String uName,pWord;
-        int x=0,flag=0;
+
 
         //Input from user
         System.out.println("=========================");
@@ -25,14 +25,7 @@ public class authenticate {
         pWord= scan.nextLine();
 
         //Comparison
-        while (x<auth.getUsers().length){
-            // if input username is equal to username or password we have stored.
-            if(auth.getUsers()[x].equals(uName) && auth.getPass()[x].equals(pWord)){
-                flag=1;
-            }
-            //increasing count so that we are not stuck in infinite loop.
-            x++;
-        }
+        int flag = auth.authenticateCreds(uName,pWord);
 
         //flag comparison for print instead of printing multiple times
         if(flag==1) {
@@ -43,14 +36,18 @@ public class authenticate {
 
     }
 
-
-
-    //Getters to access data
-    public String[] getUsers() {
-        return users;
-    }
-
-    public String[] getPass() {
-        return pass;
+    //Comparison Method
+    public int authenticateCreds(String user, String pass){
+        int x=0,flag=0;
+        while (x<this.users.length){
+            // if input username is equal to username or password we have stored.
+            if(this.users[x].equals(user) && this.pass[x].equals(pass)){
+                flag=1;
+                break;
+            }
+            //increasing count so that we are not stuck in infinite loop.
+            x++;
+        }
+        return flag;
     }
 }
