@@ -1,10 +1,12 @@
 import java.util.Scanner;
 
 public class authenticate {
+
     //////DATA PART
     private String[] users = {"user1","user2","user3",
             "user4","user5"};
-    private String[] pass = {"pass1","pass2","pass3","pass4","pass5"};
+    private String[] pass = {"pass1","pass2","pass3",
+            "pass4","pass5"};
     //////
 
     public static void main(String[] args) {
