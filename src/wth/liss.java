@@ -4,7 +4,6 @@ public class liss {
 
     public static void main(String[] args) {
         int arr[] = { 10, -2, -9, 0, 13, -50, 81, 90 };
-        int[] ary = new int[10];
         int seq=1;
         int len = arr.length;
 
