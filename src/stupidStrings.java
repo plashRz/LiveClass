@@ -23,12 +23,12 @@ public class stupidStrings {
 
         //stringBuffer and stingBuilder are used to create mutable sting
 
-        StringBuffer sb = new StringBuffer("ok");
+        StringBuffer sb = new StringBuffer("buffer");
         //sb.append(" it");
         System.out.println(sb);
 
         //stringBuilder is not thread safe
-        StringBuilder sbld = new StringBuilder("ok");
+        StringBuilder sbld = new StringBuilder("build");
         //sbld.append(" it");
 
         System.out.println(sbld);
